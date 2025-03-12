@@ -85,29 +85,3 @@ function getDartType(key: string, value: any): string {
 function capitalizeFirstLetter(text: string): string {
     return text.charAt(0).toUpperCase() + text.slice(1);
 }
-
-// Example usage
-const jsonExample = {
-    "id": 1,
-    "name": "Product",
-    "price": 99.99,
-    "category": {
-        "id": 10,
-        "name": "Electronics"
-    },
-    "tags": ["new", "hot"],
-    "reviews": [
-        {
-            "user": "Alice",
-            "rating": 5,
-            "comment": "Great product!"
-        },
-        {
-            "user": "Bob",
-            "rating": 4,
-            "comment": "Good but expensive."
-        }
-    ]
-};
-
-console.log(generateDartClass(jsonExample));
